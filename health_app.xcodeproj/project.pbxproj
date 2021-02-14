@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40BDE0A311524312400D1AE8 /* Pods_health_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E1F3A1FE4CAE7F510FAF70 /* Pods_health_app.framework */; };
+		D400B6A825AB57BF00B3AFE1 /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400B6A725AB57BF00B3AFE1 /* VideoListViewController.swift */; };
+		D409AE862594C86B0005B2B4 /* ZuhauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D409AE852594C86B0005B2B4 /* ZuhauseViewController.swift */; };
+		D40C1C7C25A0ED8C005D8912 /* Rücken einrollen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D40C1C7B25A0ED8C005D8912 /* Rücken einrollen.mp4 */; };
+		D40C1C8525A0EF8C005D8912 /* BueroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40C1C8425A0EF8B005D8912 /* BueroViewController.swift */; };
+		D40C1C8C25A0F6FA005D8912 /* Brustdehnung.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D40C1C8725A0F6FA005D8912 /* Brustdehnung.mp4 */; };
+		D40C1C8D25A0F6FA005D8912 /* Beinheben.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D40C1C8825A0F6FA005D8912 /* Beinheben.mp4 */; };
+		D40C1C8E25A0F6FA005D8912 /* Nackendrehen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D40C1C8925A0F6FA005D8912 /* Nackendrehen.mp4 */; };
+		D40C1C8F25A0F6FA005D8912 /* Drehsitz.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D40C1C8A25A0F6FA005D8912 /* Drehsitz.mp4 */; };
+		D40C1C9025A0F6FA005D8912 /* Kopfnicken.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D40C1C8B25A0F6FA005D8912 /* Kopfnicken.mp4 */; };
+		D40E6823259E016300854F21 /* UnterwegsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E6822259E016300854F21 /* UnterwegsViewController.swift */; };
+		D4273A1C25BC5B4E00F01A7E /* StepForOneWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4273A1B25BC5B4E00F01A7E /* StepForOneWeekViewController.swift */; };
+		D42FCDFC25927848007DACDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42FCDFB25927848007DACDE /* AppDelegate.swift */; };
+		D42FCDFE25927848007DACDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42FCDFD25927848007DACDE /* SceneDelegate.swift */; };
+		D42FCE0325927848007DACDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42FCE0125927848007DACDE /* Main.storyboard */; };
+		D42FCE0625927848007DACDE /* health_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D42FCE0425927848007DACDE /* health_app.xcdatamodeld */; };
+		D42FCE0B2592784D007DACDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42FCE092592784D007DACDE /* LaunchScreen.storyboard */; };
+		D42FCE1325927953007DACDE /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42FCE1225927953007DACDE /* MapKitViewController.swift */; };
+		D433A08225AC9E9000A75A5B /* CustomWorkoutFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433A08125AC9E9000A75A5B /* CustomWorkoutFolderViewController.swift */; };
+		D444089625A6145400DB69F4 /* GIFLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444089525A6145400DB69F4 /* GIFLoader.swift */; };
+		D47355FB25AF5D140058B0D8 /* CustomVideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47355FA25AF5D140058B0D8 /* CustomVideoDetailViewController.swift */; };
+		D47AB4F2259B1CB5008CDBB6 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47AB4F1259B1CB5008CDBB6 /* VideoPlayerViewController.swift */; };
+		D47AB4F6259B1DA2008CDBB6 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47AB4F5259B1DA2008CDBB6 /* Video.swift */; };
+		D47AB500259B20CB008CDBB6 /* Wirbelsäulenmobilisation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D47AB4F9259B20CA008CDBB6 /* Wirbelsäulenmobilisation.mp4 */; };
+		D47AB501259B20CB008CDBB6 /* Vierfüßlerstand.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D47AB4FA259B20CA008CDBB6 /* Vierfüßlerstand.mp4 */; };
+		D47AB502259B20CB008CDBB6 /* Katzenbuckel kniend.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D47AB4FB259B20CA008CDBB6 /* Katzenbuckel kniend.mp4 */; };
+		D47AB503259B20CB008CDBB6 /* Beinheben Bauchlage.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D47AB4FC259B20CB008CDBB6 /* Beinheben Bauchlage.mp4 */; };
+		D47AB504259B20CB008CDBB6 /* Dehnung Nacken.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D47AB4FD259B20CB008CDBB6 /* Dehnung Nacken.mp4 */; };
+		D47AB505259B20CB008CDBB6 /* Rückendehnen am Stuhl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D47AB4FE259B20CB008CDBB6 /* Rückendehnen am Stuhl.mp4 */; };
+		D47AB506259B20CB008CDBB6 /* Adler liegend.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D47AB4FF259B20CB008CDBB6 /* Adler liegend.mp4 */; };
+		D47D7161259284E7000C78EC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D7160259284E7000C78EC /* LocationManager.swift */; };
+		D47D71632592851E000C78EC /* FormateDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D71622592851E000C78EC /* FormateDisplay.swift */; };
+		D47D71652592854C000C78EC /* UnitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D71642592854C000C78EC /* UnitExtension.swift */; };
+		D4869F5725928C2600D3AD45 /* DetailedRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4869F5625928C2600D3AD45 /* DetailedRunViewController.swift */; };
+		D486DB49259E076C009123FA /* Beckenkippen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D486DB42259E076C009123FA /* Beckenkippen.mp4 */; };
+		D486DB4A259E076C009123FA /* Rumpfdehnung.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D486DB43259E076C009123FA /* Rumpfdehnung.mp4 */; };
+		D486DB4B259E076C009123FA /* Knie anheben.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D486DB44259E076C009123FA /* Knie anheben.mp4 */; };
+		D486DB4C259E076C009123FA /* Über Kreuz.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D486DB45259E076C009123FA /* Über Kreuz.mp4 */; };
+		D486DB4D259E076C009123FA /* Marschieren.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D486DB46259E076C009123FA /* Marschieren.mp4 */; };
+		D486DB4E259E076C009123FA /* Rückenstrecken.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D486DB47259E076C009123FA /* Rückenstrecken.mp4 */; };
+		D486DB4F259E076C009123FA /* Adler stehend.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D486DB48259E076C009123FA /* Adler stehend.mp4 */; };
+		D486DB52259E0967009123FA /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D486DB51259E0967009123FA /* VideoCell.swift */; };
+		D48891C125A3867400ABCA49 /* BlackRollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48891C025A3867400ABCA49 /* BlackRollViewController.swift */; };
+		D4AA53E625B1DE7E004228FE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AA53E525B1DE7E004228FE /* HealthKit.framework */; };
+		D4B21FE025A5FC2B00B9D13E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B21FDF25A5FC2B00B9D13E /* ImageViewController.swift */; };
+		D4B21FF025A60BBB00B9D13E /* Oberer Rücken1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FE225A60BB400B9D13E /* Oberer Rücken1.gif */; };
+		D4B21FF125A60BBB00B9D13E /* Oberschenkel Rückseite1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FE325A60BB400B9D13E /* Oberschenkel Rückseite1.gif */; };
+		D4B21FF225A60BBB00B9D13E /* Hüftbeuger1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FE425A60BB500B9D13E /* Hüftbeuger1.gif */; };
+		D4B21FF325A60BBB00B9D13E /* Unterschenkel Aussenseite1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FE525A60BB500B9D13E /* Unterschenkel Aussenseite1.gif */; };
+		D4B21FF425A60BBB00B9D13E /* Seitlicher Rumpf1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FE625A60BB600B9D13E /* Seitlicher Rumpf1.gif */; };
+		D4B21FF525A60BBB00B9D13E /* Nacken1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FE725A60BB600B9D13E /* Nacken1.gif */; };
+		D4B21FF625A60BBB00B9D13E /* Oberschenkel Innenseite1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FE825A60BB700B9D13E /* Oberschenkel Innenseite1.gif */; };
+		D4B21FF725A60BBB00B9D13E /* Oberschenkel Aussenseite1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FE925A60BB700B9D13E /* Oberschenkel Aussenseite1.gif */; };
+		D4B21FF825A60BBB00B9D13E /* Oberschenkel Vorderseite1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FEA25A60BB800B9D13E /* Oberschenkel Vorderseite1.gif */; };
+		D4B21FF925A60BBB00B9D13E /* Wade1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FEB25A60BB900B9D13E /* Wade1.gif */; };
+		D4B21FFA25A60BBB00B9D13E /* Gesäss1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FEC25A60BB900B9D13E /* Gesäss1.gif */; };
+		D4B21FFB25A60BBB00B9D13E /* Rücken1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FED25A60BBA00B9D13E /* Rücken1.gif */; };
+		D4B21FFC25A60BBB00B9D13E /* Unterer Rücken1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FEE25A60BBA00B9D13E /* Unterer Rücken1.gif */; };
+		D4B21FFD25A60BBB00B9D13E /* Unterschenkel Vorderseite1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4B21FEF25A60BBB00B9D13E /* Unterschenkel Vorderseite1.gif */; };
+		D4B79E8A25B0B07B005C03ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B79E8925B0B07B005C03ED /* Assets.xcassets */; };
+		D4BF02F525AA061E00CD0886 /* SavedRunsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF02F425AA061E00CD0886 /* SavedRunsViewController.swift */; };
+		D4C4977825BC6B7E004EC2F9 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C4977725BC6B7E004EC2F9 /* Step.swift */; };
+		D4C90A3825A38298008FBEFF /* BlackRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C90A3725A38298008FBEFF /* BlackRoll.swift */; };
+		D4C90A3C25A38515008FBEFF /* BlackRollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C90A3B25A38515008FBEFF /* BlackRollTableViewCell.swift */; };
+		D4DAD90E25AE0DCE006B19B8 /* SavedWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DAD90D25AE0DCE006B19B8 /* SavedWorkoutViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7ADE0505E7FBA9B2B85F9BCC /* Pods-health_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-health_app.release.xcconfig"; path = "Target Support Files/Pods-health_app/Pods-health_app.release.xcconfig"; sourceTree = "<group>"; };
+		BB054020CBE91B131FA1BCE5 /* Pods-health_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-health_app.debug.xcconfig"; path = "Target Support Files/Pods-health_app/Pods-health_app.debug.xcconfig"; sourceTree = "<group>"; };
+		D400B6A725AB57BF00B3AFE1 /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
+		D409AE852594C86B0005B2B4 /* ZuhauseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuhauseViewController.swift; sourceTree = "<group>"; };
+		D40C1C7B25A0ED8C005D8912 /* Rücken einrollen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rücken einrollen.mp4"; path = "../../../../Downloads/Rücken einrollen.mp4"; sourceTree = "<group>"; };
+		D40C1C8425A0EF8B005D8912 /* BueroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BueroViewController.swift; sourceTree = "<group>"; };
+		D40C1C8725A0F6FA005D8912 /* Brustdehnung.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Brustdehnung.mp4; path = "../../../Videos/Büro/Brustdehnung.mp4"; sourceTree = "<group>"; };
+		D40C1C8825A0F6FA005D8912 /* Beinheben.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Beinheben.mp4; path = "../../../Videos/Büro/Beinheben.mp4"; sourceTree = "<group>"; };
+		D40C1C8925A0F6FA005D8912 /* Nackendrehen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nackendrehen.mp4; path = "../../../Videos/Büro/Nackendrehen.mp4"; sourceTree = "<group>"; };
+		D40C1C8A25A0F6FA005D8912 /* Drehsitz.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Drehsitz.mp4; path = "../../../Videos/Büro/Drehsitz.mp4"; sourceTree = "<group>"; };
+		D40C1C8B25A0F6FA005D8912 /* Kopfnicken.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Kopfnicken.mp4; path = "../../../Videos/Büro/Kopfnicken.mp4"; sourceTree = "<group>"; };
+		D40E6822259E016300854F21 /* UnterwegsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnterwegsViewController.swift; sourceTree = "<group>"; };
+		D4273A1B25BC5B4E00F01A7E /* StepForOneWeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepForOneWeekViewController.swift; sourceTree = "<group>"; };
+		D42FCDF825927848007DACDE /* health_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = health_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42FCDFB25927848007DACDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D42FCDFD25927848007DACDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D42FCE0225927848007DACDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D42FCE0525927848007DACDE /* health_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = health_app.xcdatamodel; sourceTree = "<group>"; };
+		D42FCE0A2592784D007DACDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D42FCE0C2592784D007DACDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42FCE1225927953007DACDE /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		D433A08125AC9E9000A75A5B /* CustomWorkoutFolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWorkoutFolderViewController.swift; sourceTree = "<group>"; };
+		D444089525A6145400DB69F4 /* GIFLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFLoader.swift; sourceTree = "<group>"; };
+		D47355FA25AF5D140058B0D8 /* CustomVideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoDetailViewController.swift; sourceTree = "<group>"; };
+		D47AB4F1259B1CB5008CDBB6 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		D47AB4F5259B1DA2008CDBB6 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Video.swift; path = ../Video.swift; sourceTree = "<group>"; };
+		D47AB4F9259B20CA008CDBB6 /* Wirbelsäulenmobilisation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Wirbelsäulenmobilisation.mp4"; path = "../../../Development/iOS/VideoCellTutorial/VideoCellTutorial/Videos/Wirbelsäulenmobilisation.mp4"; sourceTree = "<group>"; };
+		D47AB4FA259B20CA008CDBB6 /* Vierfüßlerstand.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Vierfüßlerstand.mp4"; path = "../../../Development/iOS/VideoCellTutorial/VideoCellTutorial/Videos/Vierfüßlerstand.mp4"; sourceTree = "<group>"; };
+		D47AB4FB259B20CA008CDBB6 /* Katzenbuckel kniend.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Katzenbuckel kniend.mp4"; path = "../../../Development/iOS/VideoCellTutorial/VideoCellTutorial/Videos/Katzenbuckel kniend.mp4"; sourceTree = "<group>"; };
+		D47AB4FC259B20CB008CDBB6 /* Beinheben Bauchlage.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Beinheben Bauchlage.mp4"; path = "../../../Development/iOS/VideoCellTutorial/VideoCellTutorial/Videos/Beinheben Bauchlage.mp4"; sourceTree = "<group>"; };
+		D47AB4FD259B20CB008CDBB6 /* Dehnung Nacken.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dehnung Nacken.mp4"; path = "../../../Development/iOS/VideoCellTutorial/VideoCellTutorial/Videos/Dehnung Nacken.mp4"; sourceTree = "<group>"; };
+		D47AB4FE259B20CB008CDBB6 /* Rückendehnen am Stuhl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rückendehnen am Stuhl.mp4"; path = "../../../Development/iOS/VideoCellTutorial/VideoCellTutorial/Videos/Rückendehnen am Stuhl.mp4"; sourceTree = "<group>"; };
+		D47AB4FF259B20CB008CDBB6 /* Adler liegend.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Adler liegend.mp4"; path = "../../../Development/iOS/VideoCellTutorial/VideoCellTutorial/Videos/Adler liegend.mp4"; sourceTree = "<group>"; };
+		D47D7160259284E7000C78EC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D47D71622592851E000C78EC /* FormateDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormateDisplay.swift; sourceTree = "<group>"; };
+		D47D71642592854C000C78EC /* UnitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtension.swift; sourceTree = "<group>"; };
+		D4869F5625928C2600D3AD45 /* DetailedRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedRunViewController.swift; sourceTree = "<group>"; };
+		D486DB42259E076C009123FA /* Beckenkippen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Beckenkippen.mp4; path = ../../../Videos/Unterwegs/Beckenkippen.mp4; sourceTree = "<group>"; };
+		D486DB43259E076C009123FA /* Rumpfdehnung.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Rumpfdehnung.mp4; path = ../../../Videos/Unterwegs/Rumpfdehnung.mp4; sourceTree = "<group>"; };
+		D486DB44259E076C009123FA /* Knie anheben.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Knie anheben.mp4"; path = "../../../Videos/Unterwegs/Knie anheben.mp4"; sourceTree = "<group>"; };
+		D486DB45259E076C009123FA /* Über Kreuz.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Über Kreuz.mp4"; path = "../../../Videos/Unterwegs/Über Kreuz.mp4"; sourceTree = "<group>"; };
+		D486DB46259E076C009123FA /* Marschieren.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Marschieren.mp4; path = ../../../Videos/Unterwegs/Marschieren.mp4; sourceTree = "<group>"; };
+		D486DB47259E076C009123FA /* Rückenstrecken.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rückenstrecken.mp4"; path = "../../../Videos/Unterwegs/Rückenstrecken.mp4"; sourceTree = "<group>"; };
+		D486DB48259E076C009123FA /* Adler stehend.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Adler stehend.mp4"; path = "../../../Videos/Unterwegs/Adler stehend.mp4"; sourceTree = "<group>"; };
+		D486DB51259E0967009123FA /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoCell.swift; path = ../VideoCell.swift; sourceTree = "<group>"; };
+		D48891C025A3867400ABCA49 /* BlackRollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRollViewController.swift; sourceTree = "<group>"; };
+		D4AA53E325B1DE7D004228FE /* health_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = health_app.entitlements; sourceTree = "<group>"; };
+		D4AA53E525B1DE7E004228FE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		D4B21FDF25A5FC2B00B9D13E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		D4B21FE225A60BB400B9D13E /* Oberer Rücken1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Oberer Rücken1.gif"; sourceTree = "<group>"; };
+		D4B21FE325A60BB400B9D13E /* Oberschenkel Rückseite1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Oberschenkel Rückseite1.gif"; sourceTree = "<group>"; };
+		D4B21FE425A60BB500B9D13E /* Hüftbeuger1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Hüftbeuger1.gif"; sourceTree = "<group>"; };
+		D4B21FE525A60BB500B9D13E /* Unterschenkel Aussenseite1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Unterschenkel Aussenseite1.gif"; sourceTree = "<group>"; };
+		D4B21FE625A60BB600B9D13E /* Seitlicher Rumpf1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Seitlicher Rumpf1.gif"; sourceTree = "<group>"; };
+		D4B21FE725A60BB600B9D13E /* Nacken1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Nacken1.gif; sourceTree = "<group>"; };
+		D4B21FE825A60BB700B9D13E /* Oberschenkel Innenseite1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Oberschenkel Innenseite1.gif"; sourceTree = "<group>"; };
+		D4B21FE925A60BB700B9D13E /* Oberschenkel Aussenseite1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Oberschenkel Aussenseite1.gif"; sourceTree = "<group>"; };
+		D4B21FEA25A60BB800B9D13E /* Oberschenkel Vorderseite1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Oberschenkel Vorderseite1.gif"; sourceTree = "<group>"; };
+		D4B21FEB25A60BB900B9D13E /* Wade1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Wade1.gif; sourceTree = "<group>"; };
+		D4B21FEC25A60BB900B9D13E /* Gesäss1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Gesäss1.gif"; sourceTree = "<group>"; };
+		D4B21FED25A60BBA00B9D13E /* Rücken1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Rücken1.gif"; sourceTree = "<group>"; };
+		D4B21FEE25A60BBA00B9D13E /* Unterer Rücken1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Unterer Rücken1.gif"; sourceTree = "<group>"; };
+		D4B21FEF25A60BBB00B9D13E /* Unterschenkel Vorderseite1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Unterschenkel Vorderseite1.gif"; sourceTree = "<group>"; };
+		D4B79E8925B0B07B005C03ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4BF02F425AA061E00CD0886 /* SavedRunsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRunsViewController.swift; sourceTree = "<group>"; };
+		D4C4977725BC6B7E004EC2F9 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		D4C90A3725A38298008FBEFF /* BlackRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRoll.swift; sourceTree = "<group>"; };
+		D4C90A3B25A38515008FBEFF /* BlackRollTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRollTableViewCell.swift; sourceTree = "<group>"; };
+		D4DAD90D25AE0DCE006B19B8 /* SavedWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedWorkoutViewController.swift; sourceTree = "<group>"; };
+		E8E1F3A1FE4CAE7F510FAF70 /* Pods_health_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_health_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D42FCDF525927848007DACDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AA53E625B1DE7E004228FE /* HealthKit.framework in Frameworks */,
+				40BDE0A311524312400D1AE8 /* Pods_health_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25434E57AC6039B96EA80968 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB054020CBE91B131FA1BCE5 /* Pods-health_app.debug.xcconfig */,
+				7ADE0505E7FBA9B2B85F9BCC /* Pods-health_app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D409AE872594C8780005B2B4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D48891C025A3867400ABCA49 /* BlackRollViewController.swift */,
+				D4869F5625928C2600D3AD45 /* DetailedRunViewController.swift */,
+				D40E6822259E016300854F21 /* UnterwegsViewController.swift */,
+				D409AE852594C86B0005B2B4 /* ZuhauseViewController.swift */,
+				D42FCE1225927953007DACDE /* MapKitViewController.swift */,
+				D47AB4F1259B1CB5008CDBB6 /* VideoPlayerViewController.swift */,
+				D40C1C8425A0EF8B005D8912 /* BueroViewController.swift */,
+				D4B21FDF25A5FC2B00B9D13E /* ImageViewController.swift */,
+				D4BF02F425AA061E00CD0886 /* SavedRunsViewController.swift */,
+				D400B6A725AB57BF00B3AFE1 /* VideoListViewController.swift */,
+				D433A08125AC9E9000A75A5B /* CustomWorkoutFolderViewController.swift */,
+				D4DAD90D25AE0DCE006B19B8 /* SavedWorkoutViewController.swift */,
+				D47355FA25AF5D140058B0D8 /* CustomVideoDetailViewController.swift */,
+				D4273A1B25BC5B4E00F01A7E /* StepForOneWeekViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D42FCDEF25927848007DACDE = {
+			isa = PBXGroup;
+			children = (
+				D42FCDFA25927848007DACDE /* health_app */,
+				D42FCDF925927848007DACDE /* Products */,
+				D4AA53E425B1DE7E004228FE /* Frameworks */,
+				25434E57AC6039B96EA80968 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D42FCDF925927848007DACDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D42FCDF825927848007DACDE /* health_app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D42FCDFA25927848007DACDE /* health_app */ = {
+			isa = PBXGroup;
+			children = (
+				D4AA53E325B1DE7D004228FE /* health_app.entitlements */,
+				D444089525A6145400DB69F4 /* GIFLoader.swift */,
+				D4C4977725BC6B7E004EC2F9 /* Step.swift */,
+				D4C90A3B25A38515008FBEFF /* BlackRollTableViewCell.swift */,
+				D486DB51259E0967009123FA /* VideoCell.swift */,
+				D47AB4F5259B1DA2008CDBB6 /* Video.swift */,
+				D4C90A3725A38298008FBEFF /* BlackRoll.swift */,
+				D42FCDFB25927848007DACDE /* AppDelegate.swift */,
+				D42FCDFD25927848007DACDE /* SceneDelegate.swift */,
+				D47D7160259284E7000C78EC /* LocationManager.swift */,
+				D47D71622592851E000C78EC /* FormateDisplay.swift */,
+				D47D71642592854C000C78EC /* UnitExtension.swift */,
+				D42FCE0125927848007DACDE /* Main.storyboard */,
+				D42FCE092592784D007DACDE /* LaunchScreen.storyboard */,
+				D42FCE0C2592784D007DACDE /* Info.plist */,
+				D4B79E8925B0B07B005C03ED /* Assets.xcassets */,
+				D42FCE0425927848007DACDE /* health_app.xcdatamodeld */,
+				D4B21FFF25A60BC500B9D13E /* Blackroll GIFs */,
+				D4F39C772594CB0B0031539D /* Videos */,
+				D409AE872594C8780005B2B4 /* ViewControllers */,
+			);
+			path = health_app;
+			sourceTree = "<group>";
+		};
+		D4AA53E425B1DE7E004228FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4AA53E525B1DE7E004228FE /* HealthKit.framework */,
+				E8E1F3A1FE4CAE7F510FAF70 /* Pods_health_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4B21FFF25A60BC500B9D13E /* Blackroll GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				D4B21FEC25A60BB900B9D13E /* Gesäss1.gif */,
+				D4B21FE425A60BB500B9D13E /* Hüftbeuger1.gif */,
+				D4B21FE725A60BB600B9D13E /* Nacken1.gif */,
+				D4B21FE225A60BB400B9D13E /* Oberer Rücken1.gif */,
+				D4B21FE925A60BB700B9D13E /* Oberschenkel Aussenseite1.gif */,
+				D4B21FE825A60BB700B9D13E /* Oberschenkel Innenseite1.gif */,
+				D4B21FE325A60BB400B9D13E /* Oberschenkel Rückseite1.gif */,
+				D4B21FEA25A60BB800B9D13E /* Oberschenkel Vorderseite1.gif */,
+				D4B21FED25A60BBA00B9D13E /* Rücken1.gif */,
+				D4B21FE625A60BB600B9D13E /* Seitlicher Rumpf1.gif */,
+				D4B21FEE25A60BBA00B9D13E /* Unterer Rücken1.gif */,
+				D4B21FE525A60BB500B9D13E /* Unterschenkel Aussenseite1.gif */,
+				D4B21FEF25A60BBB00B9D13E /* Unterschenkel Vorderseite1.gif */,
+				D4B21FEB25A60BB900B9D13E /* Wade1.gif */,
+			);
+			path = "Blackroll GIFs";
+			sourceTree = "<group>";
+		};
+		D4F39C772594CB0B0031539D /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				D40C1C8825A0F6FA005D8912 /* Beinheben.mp4 */,
+				D40C1C8725A0F6FA005D8912 /* Brustdehnung.mp4 */,
+				D40C1C8A25A0F6FA005D8912 /* Drehsitz.mp4 */,
+				D40C1C8B25A0F6FA005D8912 /* Kopfnicken.mp4 */,
+				D40C1C8925A0F6FA005D8912 /* Nackendrehen.mp4 */,
+				D47AB4FF259B20CB008CDBB6 /* Adler liegend.mp4 */,
+				D486DB48259E076C009123FA /* Adler stehend.mp4 */,
+				D486DB42259E076C009123FA /* Beckenkippen.mp4 */,
+				D486DB44259E076C009123FA /* Knie anheben.mp4 */,
+				D486DB46259E076C009123FA /* Marschieren.mp4 */,
+				D486DB47259E076C009123FA /* Rückenstrecken.mp4 */,
+				D486DB43259E076C009123FA /* Rumpfdehnung.mp4 */,
+				D486DB45259E076C009123FA /* Über Kreuz.mp4 */,
+				D47AB4FC259B20CB008CDBB6 /* Beinheben Bauchlage.mp4 */,
+				D47AB4FD259B20CB008CDBB6 /* Dehnung Nacken.mp4 */,
+				D47AB4FB259B20CA008CDBB6 /* Katzenbuckel kniend.mp4 */,
+				D40C1C7B25A0ED8C005D8912 /* Rücken einrollen.mp4 */,
+				D47AB4FE259B20CB008CDBB6 /* Rückendehnen am Stuhl.mp4 */,
+				D47AB4FA259B20CA008CDBB6 /* Vierfüßlerstand.mp4 */,
+				D47AB4F9259B20CA008CDBB6 /* Wirbelsäulenmobilisation.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D42FCDF725927848007DACDE /* health_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D42FCE0F2592784D007DACDE /* Build configuration list for PBXNativeTarget "health_app" */;
+			buildPhases = (
+				4374257E5FE008283BF032F8 /* [CP] Check Pods Manifest.lock */,
+				D42FCDF425927848007DACDE /* Sources */,
+				D42FCDF525927848007DACDE /* Frameworks */,
+				D42FCDF625927848007DACDE /* Resources */,
+				9C9A7FA9FA61EC876408B8C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = health_app;
+			productName = health_app;
+			productReference = D42FCDF825927848007DACDE /* health_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D42FCDF025927848007DACDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Dominik Polzer";
+				TargetAttributes = {
+					D42FCDF725927848007DACDE = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = D42FCDF325927848007DACDE /* Build configuration list for PBXProject "health_app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D42FCDEF25927848007DACDE;
+			productRefGroup = D42FCDF925927848007DACDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D42FCDF725927848007DACDE /* health_app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D42FCDF625927848007DACDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B21FF525A60BBB00B9D13E /* Nacken1.gif in Resources */,
+				D4B21FF325A60BBB00B9D13E /* Unterschenkel Aussenseite1.gif in Resources */,
+				D40C1C8D25A0F6FA005D8912 /* Beinheben.mp4 in Resources */,
+				D486DB4E259E076C009123FA /* Rückenstrecken.mp4 in Resources */,
+				D486DB49259E076C009123FA /* Beckenkippen.mp4 in Resources */,
+				D47AB506259B20CB008CDBB6 /* Adler liegend.mp4 in Resources */,
+				D486DB4A259E076C009123FA /* Rumpfdehnung.mp4 in Resources */,
+				D40C1C8C25A0F6FA005D8912 /* Brustdehnung.mp4 in Resources */,
+				D4B21FF225A60BBB00B9D13E /* Hüftbeuger1.gif in Resources */,
+				D42FCE0B2592784D007DACDE /* LaunchScreen.storyboard in Resources */,
+				D4B21FFC25A60BBB00B9D13E /* Unterer Rücken1.gif in Resources */,
+				D47AB504259B20CB008CDBB6 /* Dehnung Nacken.mp4 in Resources */,
+				D486DB4F259E076C009123FA /* Adler stehend.mp4 in Resources */,
+				D47AB503259B20CB008CDBB6 /* Beinheben Bauchlage.mp4 in Resources */,
+				D486DB4D259E076C009123FA /* Marschieren.mp4 in Resources */,
+				D4B21FFA25A60BBB00B9D13E /* Gesäss1.gif in Resources */,
+				D40C1C8E25A0F6FA005D8912 /* Nackendrehen.mp4 in Resources */,
+				D4B21FF625A60BBB00B9D13E /* Oberschenkel Innenseite1.gif in Resources */,
+				D47AB502259B20CB008CDBB6 /* Katzenbuckel kniend.mp4 in Resources */,
+				D47AB505259B20CB008CDBB6 /* Rückendehnen am Stuhl.mp4 in Resources */,
+				D4B21FF825A60BBB00B9D13E /* Oberschenkel Vorderseite1.gif in Resources */,
+				D4B21FFB25A60BBB00B9D13E /* Rücken1.gif in Resources */,
+				D4B21FF725A60BBB00B9D13E /* Oberschenkel Aussenseite1.gif in Resources */,
+				D4B21FF025A60BBB00B9D13E /* Oberer Rücken1.gif in Resources */,
+				D40C1C7C25A0ED8C005D8912 /* Rücken einrollen.mp4 in Resources */,
+				D486DB4C259E076C009123FA /* Über Kreuz.mp4 in Resources */,
+				D486DB4B259E076C009123FA /* Knie anheben.mp4 in Resources */,
+				D47AB501259B20CB008CDBB6 /* Vierfüßlerstand.mp4 in Resources */,
+				D40C1C9025A0F6FA005D8912 /* Kopfnicken.mp4 in Resources */,
+				D47AB500259B20CB008CDBB6 /* Wirbelsäulenmobilisation.mp4 in Resources */,
+				D4B79E8A25B0B07B005C03ED /* Assets.xcassets in Resources */,
+				D4B21FF425A60BBB00B9D13E /* Seitlicher Rumpf1.gif in Resources */,
+				D40C1C8F25A0F6FA005D8912 /* Drehsitz.mp4 in Resources */,
+				D4B21FFD25A60BBB00B9D13E /* Unterschenkel Vorderseite1.gif in Resources */,
+				D4B21FF925A60BBB00B9D13E /* Wade1.gif in Resources */,
+				D42FCE0325927848007DACDE /* Main.storyboard in Resources */,
+				D4B21FF125A60BBB00B9D13E /* Oberschenkel Rückseite1.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4374257E5FE008283BF032F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-health_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C9A7FA9FA61EC876408B8C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-health_app/Pods-health_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-health_app/Pods-health_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-health_app/Pods-health_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D42FCDF425927848007DACDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D400B6A825AB57BF00B3AFE1 /* VideoListViewController.swift in Sources */,
+				D444089625A6145400DB69F4 /* GIFLoader.swift in Sources */,
+				D4C90A3C25A38515008FBEFF /* BlackRollTableViewCell.swift in Sources */,
+				D433A08225AC9E9000A75A5B /* CustomWorkoutFolderViewController.swift in Sources */,
+				D47355FB25AF5D140058B0D8 /* CustomVideoDetailViewController.swift in Sources */,
+				D409AE862594C86B0005B2B4 /* ZuhauseViewController.swift in Sources */,
+				D42FCE0625927848007DACDE /* health_app.xcdatamodeld in Sources */,
+				D47D71652592854C000C78EC /* UnitExtension.swift in Sources */,
+				D4273A1C25BC5B4E00F01A7E /* StepForOneWeekViewController.swift in Sources */,
+				D4869F5725928C2600D3AD45 /* DetailedRunViewController.swift in Sources */,
+				D42FCDFC25927848007DACDE /* AppDelegate.swift in Sources */,
+				D47D7161259284E7000C78EC /* LocationManager.swift in Sources */,
+				D4DAD90E25AE0DCE006B19B8 /* SavedWorkoutViewController.swift in Sources */,
+				D40C1C8525A0EF8C005D8912 /* BueroViewController.swift in Sources */,
+				D42FCE1325927953007DACDE /* MapKitViewController.swift in Sources */,
+				D48891C125A3867400ABCA49 /* BlackRollViewController.swift in Sources */,
+				D4C4977825BC6B7E004EC2F9 /* Step.swift in Sources */,
+				D4B21FE025A5FC2B00B9D13E /* ImageViewController.swift in Sources */,
+				D486DB52259E0967009123FA /* VideoCell.swift in Sources */,
+				D40E6823259E016300854F21 /* UnterwegsViewController.swift in Sources */,
+				D4BF02F525AA061E00CD0886 /* SavedRunsViewController.swift in Sources */,
+				D47AB4F6259B1DA2008CDBB6 /* Video.swift in Sources */,
+				D4C90A3825A38298008FBEFF /* BlackRoll.swift in Sources */,
+				D47AB4F2259B1CB5008CDBB6 /* VideoPlayerViewController.swift in Sources */,
+				D42FCDFE25927848007DACDE /* SceneDelegate.swift in Sources */,
+				D47D71632592851E000C78EC /* FormateDisplay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D42FCE0125927848007DACDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D42FCE0225927848007DACDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D42FCE092592784D007DACDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D42FCE0A2592784D007DACDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D42FCE0D2592784D007DACDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D42FCE0E2592784D007DACDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D42FCE102592784D007DACDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB054020CBE91B131FA1BCE5 /* Pods-health_app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = health_app/health_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2UP9UUT7F;
+				INFOPLIST_FILE = health_app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dominikpolzer.health-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D42FCE112592784D007DACDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADE0505E7FBA9B2B85F9BCC /* Pods-health_app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = health_app/health_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2UP9UUT7F;
+				INFOPLIST_FILE = health_app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dominikpolzer.health-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D42FCDF325927848007DACDE /* Build configuration list for PBXProject "health_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D42FCE0D2592784D007DACDE /* Debug */,
+				D42FCE0E2592784D007DACDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D42FCE0F2592784D007DACDE /* Build configuration list for PBXNativeTarget "health_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D42FCE102592784D007DACDE /* Debug */,
+				D42FCE112592784D007DACDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D42FCE0425927848007DACDE /* health_app.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D42FCE0525927848007DACDE /* health_app.xcdatamodel */,
+			);
+			currentVersion = D42FCE0525927848007DACDE /* health_app.xcdatamodel */;
+			path = health_app.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D42FCDF025927848007DACDE /* Project object */;
+}
